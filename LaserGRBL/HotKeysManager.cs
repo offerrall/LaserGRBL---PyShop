@@ -251,7 +251,8 @@ namespace LaserGRBL
 				case HotKey.Actions.Disconnect:
 					mCore.HKDisconnect(); break;
 				case HotKey.Actions.OpenFile:
-					mCore.OpenFile(); break;
+					SaveOptionForm.CreateAndShowDialog(parent, mCore); break;
+					// mCore.OpenFile(); break;
 				case HotKey.Actions.ReopenLastFile:
 					mCore.ReOpenFile(); break;
 				case HotKey.Actions.SaveFile:
